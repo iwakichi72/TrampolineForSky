@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>フォント利用条件</title>
+<style>
+* {
+	margin: 0; padding: 0; 
+	font-size: inherit; font-weight: inherit; color: inherit; text-decoration: inherit;
+}
+
+:root {
+	--背景色: hsl(48, 15%, 90%); 
+	--強調背景色: hsl(48, 12%, 85%);
+}
+
+html { background: var(--背景色);}
+body { max-width: 52em; margin: 0 auto; line-height: 1.75;}
+
+h1 {
+	margin: 1em 0; padding: 0 2rem 1em; border-bottom: 1px solid; 
+	font-size: 167%; font-weight: bolder;
+}
+section { margin: 0 2rem;}
+
+p { margin: 0 0 1.5em;}
+
+dl { margin: 2em 0; padding-left: 2em;}
+dt { font-weight: 600; float: left;}
+dt::before { content: "●"; color: #fff; margin-left: -1.5em; position: absolute;}
+dt::after { content: "—"; margin: 0 0.5em; color: #fff;}
+
+dl.利用条件 {
+	background: var(--強調背景色);
+	border-radius: 0.25em; padding: 2em 2rem 0.5em calc(2rem + 2em);
+}
+dl.利用条件 > dt::before,
+dl.利用条件 > dt::after { _color: var(--副彩色a50);}
+
+a { padding: 0.1em 0; border-radius: 0.2em; text-decoration: none;}
+a:link { color: #43a;}
+a:visited { color: #379;}
+a:hover { color: #fff; background: #43a;}
+</style>
+</head>
+<body>
+<h1>フォント利用条件</h1>
+<main>
+	<section>
+		<p>このフォント（Nu Hanafudaya v1.0.1）を正規の方法で取得した人は、作者（さゆぬ）に個別の許可を求める事なく、下記の範囲でフォントを利用できます。この範囲を逸脱する使い方については、御相談下さい。</p>
+		<dl class="利用条件">
+			<dt>画像などの作成と公開</dt>
+			<dd><p>このフォントに収録されている字形などのデータを使って文書・画像・動画などを作り、それをインターネット上に公開したり、出版したりできます。営利目的かどうかは問いません。作者名など（クレジット）を表示する必要もありません。</p></dd>
+			<dt>フォントの再頒布</dt>
+			<dd><p>このフォント自体を再頒布（送信可能化）してはいけません。他人に紹介したい場合はフォントファイルを渡すのではなく、公式ウエブページへ誘導して下さい。</p></dd>
+			<dt>フォントの改変と頒布</dt>
+			<dd><p>このフォントに由来するデータを使って新たなフォントを作成し、それを私的な環境にインストールできます。それを頒布してはいけません。ここで言う「新たなフォント」とは、一字づつ切り出した画像など、フォントと同然に使用できるデータを含みます。</p></dd>
+			<dt>アプリケーションなどへの組み込み</dt>
+			<dd><p>アプリケーションに収録された不変の文字列を表示する目的で、このフォントデータをゲームなどのアプリに組み込んで頒布できます。但し、技術的にフォントデータを取り出せない状態となっている必要があります。</p></dd>
+			<dt>免責</dt>
+			<dd><p>このフォントの使用によって何らかの損害が生じた場合、フォント作者はその責任を負いません。</p></dd>
+		</dl>
+		<p>新バージョンなどの情報は<a href="http://kokagem.sakura.ne.jp/font/hanafudaya/">説明ページ</a>をご覧ください。</p>
+	</section>
+</main>
+</body>
+</html>
